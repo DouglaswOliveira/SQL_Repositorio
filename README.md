@@ -1,4 +1,4 @@
-# SQL_Repositorio
+# SQL_Repositorio 👍
 ## *Melhor Coadjuvante de Linguagem de Programação*
 
 ## INSTRUÇÃO SELECT :
