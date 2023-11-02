@@ -1,26 +1,37 @@
-### CLÁUSULA SELECT
+# -------------------- boas-vindas--------------------.
+('Bem-vindo a Aula de SQL Douglas Wesley de Oliveira')
 
-### INSTRUÇÃO SELECT :
 
-**Consulta básica :**
-- Mostre-me Todos os Dados da tabela chamada MY_TABLE
-  - Codigo :
+### COMANDO SQL: SÃO INSTRUÇÕES PARA MANIPULAR DADO SEM UM BANCO DE DADOS.
+## AQUI ESTÃO ALGUMAS COMANDO BÁSICO DE SQL
 
- ```javascript
-SELECT * FROM MY_TABLE;
-```
+  1 - SELECT: seleciona colunas de dados a serem exibidas nos resultados.
+  2 -FROM: especifica a tabela de onde os dados serão obtidos.
+  3 -CREATE TABLE: cria uma nova tabela no banco de dados.
+  4 -ALTER TABLE: altera a estrutura de uma tabela existente.
+  5 -CHECK: define uma condição que os dados devem atender para serem inseridos na tabela.
+  6 -WHERE: restringe os dados selecionados de acordo com uma condição de comparação.
 
-**Consulta Com Filtro e Classificação :**
+1 - Para criar uma nova tabela:
 
- ```javascript
-SELECT *
-FROM MY_TABLE
-WHERE COLUMN1 > 100
-ORDER BY COLUMN2;
-```
-- LISTA UM OU MAIS NOMES DE UMA COLUNA
+REATE TABLE nome_da_tabela (
+    coluna_1 tipo_de_dados,
+    coluna_2 tipo_de_dados,
+    coluna_3 tipo_de_dados
+);
 
- ```javascript
-SELECT ID,NAME
-FROM OWNER;
-```
+2 - Para alterar uma tabela existente, adicionando uma nova coluna:
+
+ALTER TABLE nome_da_tabela ADD nova_coluna tipo_de_dados;
+
+3 - Para definir uma condição que os dados devem atender para serem inseridos na tabela:
+
+CHECK (condição)
+
+4 - Para selecionar certas colunas de uma tabela:
+
+SELECT coluna_1, coluna_2 FROM nome_da_tabela;
+
+5 - Para restringir os dados selecionados com base em uma condição:
+
+SELECT * FROM nome_da_tabela WHERE condicao;
